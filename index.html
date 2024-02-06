@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Definerer dokumentet som HTML og angir språket til engelsk -->
+    <meta charset="UTF-8">
+    <!-- Angir skjermstørrelsen og skalering for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lenker til Font Awesome-ikonbiblioteket -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Lenker til egendefinert CSS-fil (style.css) -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Setter tittelen på nettsiden -->
+    <title>Login page</title>
+</head>
+
+<body>
+    <!-- Container for innholdet på nettsiden -->
+    <div class="container" id="container">
+        <!-- Registreringsskjema -->
+        <div class="form-container sign-up">
+            <form>
+                <!-- Overskrift for registreringsskjema -->
+                <h1>Create Account</h1>
+                <!-- Sosiale ikoner for rask registrering med ulike plattformer -->
+                <div class="social-icons">
+                    <a href="https://accounts.google.com/" class="icon">
+                        <i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="https://www.facebook.com/" class="icon">
+                        <i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://github.com/" class="icon">
+                        <i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/" class="icon">
+                        <i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <!-- Melding om bruk av e-post for registrering -->
+                <span>eller bruk e-postpassordet ditt</span>
+                <!-- Inntastingsfelt for navn, e-post og passord -->
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <!-- Knapp for å fullføre registrering -->
+                <button>Logg inn</button>
+            </form>
+        </div>
+        <!-- Påloggingsskjema -->
+        <div class="form-container sign-in">
+            <form>
+                <!-- Overskrift for pålogging -->
+                <h1>Logg inn</h1>
+                <!-- Sosiale ikoner for rask pålogging med ulike plattformer -->
+                <div class="social-icons">
+                    <a href="https://accounts.google.com/" class="icon">
+                        <i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="https://www.facebook.com/" class="icon">
+                        <i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://github.com/" class="icon">
+                        <i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/" class="icon">
+                        <i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <!-- Melding om bruk av e-post og passord for pålogging -->
+                <span>eller bruk e-postpassordet ditt</span>
+                <!-- Inntastingsfelt for e-post og passord -->
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <!-- Lenke for å tilbakestille passordet -->
+                <a href="#">Glemt passordet</a>
+                <!-- Knapp for å fullføre pålogging -->
+                <button>Logg inn</button>
+            </form>
+        </div>
+        <!-- Panel for å veksle mellom registrering og pålogging -->
+        <div class="toggle-container">
+            <div class="toggle">
+                <!-- Venstre panel for pålogging -->
+                <div class="toggle-panel toggle-left">
+                    <h1>Velkommen Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <!-- Skjult påloggingsknapp (vises ved veksling) -->
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <!-- Høyre panel for registrering -->
+                <div class="toggle-panel toggle-right">
+                    <h1>Velkommen!</h1>
+                    <p>Vennligst registrer deg med dine personlige opplysninger for å bruke alle funksjonene på nettstedet</p>
+                    <!-- Skjult registreringsknapp (vises ved veksling) -->
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
